@@ -117,7 +117,6 @@ const ProjectTag = styled.div`
 `;
 
 const Project = ({
-  id,
   name,
   description,
   repositoryUrl,
@@ -167,7 +166,6 @@ const Project = ({
 );
 
 Project.propTypes = {
-  id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   repositoryUrl: PropTypes.string.isRequired,
@@ -183,18 +181,15 @@ Project.propTypes = {
 
 const Projects = () => (
   <div className="aboutflex">
-  <Section.Container id="project" Background={Background}>
+  <Section.Container id="skills" Background={Background}>
   <Section.Header name="Skills" icon="💻" label="notebook" />
     <StaticQuery
       query={graphql`
         query ProjectsQuery {
           contentfulAbout {
             projects {
-              id
               name
               description
-              repositoryUrl
-              publishedDate(formatString: "YYYY")
               type
               logo {
                 title

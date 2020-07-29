@@ -1,16 +1,4 @@
-var plugins = [{
-      plugin: require('D:/My Work/Website/DCV 2/DCV/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
-      options: {"plugins":[]},
-    },{
-      plugin: require('D:/My Work/Website/DCV 2/DCV/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
-      options: {"plugins":[],"name":"Mate Gatsby Starter","short_name":"Mate Gatsby Starter","start_url":"/","background_color":"#FFFFFF","theme_color":"#FFFFFF","display":"minimal-ui","icon":"media/icon.png","cache_busting_mode":"query","include_favicon":true,"legacy":true,"theme_color_in_head":true,"cacheDigest":"ea706e8b6a8b2f1ff0c708cd904f0df1"},
-    },{
-      plugin: require('D:/My Work/Website/DCV 2/DCV/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
-      options: {"plugins":[]},
-    },{
-      plugin: require('D:/My Work/Website/DCV 2/DCV/node_modules/gatsby-plugin-offline/gatsby-ssr'),
-      options: {"plugins":[]},
-    }]
+var plugins = []
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [
 //   {

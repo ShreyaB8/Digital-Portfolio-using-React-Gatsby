@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { Box, Image, Flex } from 'rebass/styled-components';
 import { StaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
@@ -8,6 +7,7 @@ import Fade from 'react-reveal/Fade';
 import Section from '../components/Section';
 import Triangle from '../components/Triangle';
 import markdownRenderer from '../components/MarkdownRenderer';
+import {navigate} from 'gatsby';
 import "../styles/about.scss"
 
 const Background = () => (
@@ -43,10 +43,6 @@ const ProfilePicture = styled(Image)`
   }
 `;
 
-function shoot() {
-  alert("Great Shot!");
-}
-
 
 const About = () => (
   <div className="aboutflex">
@@ -69,7 +65,9 @@ const About = () => (
             }
           }
         }
+        
       `}
+      
       render={(data) => {
         const { aboutMe, profile } = data.contentfulAbout;
         return (
@@ -82,9 +80,13 @@ const About = () => (
                   renderers={markdownRenderer}
                 />
               </Fade>
-              <button onClick={shoot}>Take the shot!</button>
+              <Box paddingTop={[30]} paddingLeft={20}  >
+                  <Fade left>
+                    <a href={`https://drive.google.com/file/d/1ANUhW1wUwTAEUnhSOjnap8o7PlhZ2B8v/view?usp=sharing`}  className="button" ><span>Download Resume</span></a>
+                  </Fade>
+              </Box>
             </Box>
-
+                
             <Box
               width={[1, 1, 2 / 6]}
               style={{ maxWidth: '300px', margin: 'auto' }}

@@ -3,15 +3,26 @@
     "develop": {
       "plugins": [
         {
-          "name": "babel-plugin-styled-components",
-          "stage": "develop",
+          "name": "D:\\My Work\\Website\\DCV 2\\DCV\\node_modules\\@babel\\plugin-proposal-optional-chaining\\lib\\index.js",
+          "options": {}
+        },
+        {
+          "name": "D:\\My Work\\Website\\DCV 2\\DCV\\node_modules\\@babel\\plugin-proposal-nullish-coalescing-operator\\lib\\index.js",
+          "options": {}
+        },
+        {
+          "name": "D:\\My Work\\Website\\DCV 2\\DCV\\node_modules\\@babel\\plugin-proposal-numeric-separator\\lib\\index.js",
+          "options": {}
+        }
+      ],
+      "presets": [
+        {
+          "name": "D:\\My Work\\Website\\DCV 2\\DCV\\node_modules\\@babel\\preset-typescript\\lib\\index.js",
           "options": {
-            "plugins": [],
-            "ssr": false
+            "plugins": []
           }
         }
       ],
-      "presets": [],
       "options": {
         "cacheDirectory": true,
         "sourceType": "unambiguous"
@@ -20,15 +31,26 @@
     "develop-html": {
       "plugins": [
         {
-          "name": "babel-plugin-styled-components",
-          "stage": "develop-html",
+          "name": "D:\\My Work\\Website\\DCV 2\\DCV\\node_modules\\@babel\\plugin-proposal-optional-chaining\\lib\\index.js",
+          "options": {}
+        },
+        {
+          "name": "D:\\My Work\\Website\\DCV 2\\DCV\\node_modules\\@babel\\plugin-proposal-nullish-coalescing-operator\\lib\\index.js",
+          "options": {}
+        },
+        {
+          "name": "D:\\My Work\\Website\\DCV 2\\DCV\\node_modules\\@babel\\plugin-proposal-numeric-separator\\lib\\index.js",
+          "options": {}
+        }
+      ],
+      "presets": [
+        {
+          "name": "D:\\My Work\\Website\\DCV 2\\DCV\\node_modules\\@babel\\preset-typescript\\lib\\index.js",
           "options": {
-            "plugins": [],
-            "ssr": false
+            "plugins": []
           }
         }
       ],
-      "presets": [],
       "options": {
         "cacheDirectory": true,
         "sourceType": "unambiguous"
@@ -37,15 +59,26 @@
     "build-html": {
       "plugins": [
         {
-          "name": "babel-plugin-styled-components",
-          "stage": "build-html",
+          "name": "D:\\My Work\\Website\\DCV 2\\DCV\\node_modules\\@babel\\plugin-proposal-optional-chaining\\lib\\index.js",
+          "options": {}
+        },
+        {
+          "name": "D:\\My Work\\Website\\DCV 2\\DCV\\node_modules\\@babel\\plugin-proposal-nullish-coalescing-operator\\lib\\index.js",
+          "options": {}
+        },
+        {
+          "name": "D:\\My Work\\Website\\DCV 2\\DCV\\node_modules\\@babel\\plugin-proposal-numeric-separator\\lib\\index.js",
+          "options": {}
+        }
+      ],
+      "presets": [
+        {
+          "name": "D:\\My Work\\Website\\DCV 2\\DCV\\node_modules\\@babel\\preset-typescript\\lib\\index.js",
           "options": {
-            "plugins": [],
-            "ssr": true
+            "plugins": []
           }
         }
       ],
-      "presets": [],
       "options": {
         "cacheDirectory": true,
         "sourceType": "unambiguous"
@@ -54,15 +87,26 @@
     "build-javascript": {
       "plugins": [
         {
-          "name": "babel-plugin-styled-components",
-          "stage": "build-javascript",
+          "name": "D:\\My Work\\Website\\DCV 2\\DCV\\node_modules\\@babel\\plugin-proposal-optional-chaining\\lib\\index.js",
+          "options": {}
+        },
+        {
+          "name": "D:\\My Work\\Website\\DCV 2\\DCV\\node_modules\\@babel\\plugin-proposal-nullish-coalescing-operator\\lib\\index.js",
+          "options": {}
+        },
+        {
+          "name": "D:\\My Work\\Website\\DCV 2\\DCV\\node_modules\\@babel\\plugin-proposal-numeric-separator\\lib\\index.js",
+          "options": {}
+        }
+      ],
+      "presets": [
+        {
+          "name": "D:\\My Work\\Website\\DCV 2\\DCV\\node_modules\\@babel\\preset-typescript\\lib\\index.js",
           "options": {
-            "plugins": [],
-            "ssr": true
+            "plugins": []
           }
         }
       ],
-      "presets": [],
       "options": {
         "cacheDirectory": true,
         "sourceType": "unambiguous"

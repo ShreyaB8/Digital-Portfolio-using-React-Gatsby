@@ -9,7 +9,6 @@ import Section from '../components/Section';
 import { CardContainer, Card } from '../components/Card';
 import Triangle from '../components/Triangle';
 import ImageSubtitle from '../components/ImageSubtitle';
-import "../styles/about.scss"
 
 const MEDIUM_CDN = 'https://cdn-images-1.medium.com/max/400';
 const MEDIUM_URL = 'https://medium.com';
@@ -17,21 +16,21 @@ const MEDIUM_URL = 'https://medium.com';
 const Background = () => (
   <div>
     <Triangle
-      //color="backgroundDark"
+      color="backgroundDark"
       height={['15vh', '10vh']}
       width={['100vw', '100vw']}
       invertX
     />
 
     <Triangle
-      //color="secondary"
+      color="secondary"
       height={['50vh', '40vh']}
       width={['70vw', '40vw']}
       invertY
     />
 
     <Triangle
-      //color="primaryDark"
+      color="primaryDark"
       height={['40vh', '15vh']}
       width={['100vw', '100vw']}
       invertX
@@ -51,7 +50,7 @@ const EllipsisHeading = styled(Heading)`
   display: -webkit-inline-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
-  border-bottom: ${(props) => props.theme.colors.primaryLight} 5px solid;
+  border-bottom: ${(props) => props.theme.colors.primary} 5px solid;
 `;
 
 const Post = ({ title, text, image, url, date, time }) => (
@@ -62,14 +61,14 @@ const Post = ({ title, text, image, url, date, time }) => (
     style={{ textDecoration: 'none' }}
   >
     <Card pb={4}>
-      <EllipsisHeading m={3} p={1} color="secondary">
+      <EllipsisHeading m={3} p={1} color="text">
         {title}
       </EllipsisHeading>
       {image && <CoverImage src={image} height="200px" alt={title} />}
-      <Text m={3} color="primaryLight">
+      <Text m={3} color="text">
         {text}
       </Text>
-      <ImageSubtitle bg="primaryLight" color="white" x="right" y="bottom" round>
+      <ImageSubtitle bg="primary" color="white" x="right" y="bottom" round>
         {`${date} - ${Math.ceil(time)} min`}
       </ImageSubtitle>
     </Card>
@@ -126,7 +125,7 @@ const MorePosts = ({ username, name, number }) => (
           {`has published ${number} more posts!`}
         </Heading>
       </Box>
-      <Heading color="text" mt={5} textAlign="right">
+      <Heading color="primary" mt={5} textAlign="right">
         Go to Medium &nbsp;
         <FontAwesomeIcon name="arrow-right" aria-label="Go to Medium" />
       </Heading>
@@ -192,10 +191,9 @@ const Writing = () => (
 
       return (
         isMediumUserDefined && (
-          <div className="aboutflex">
-          <Section.Container id="writing" Background={Background} >
-            <Section.Header name="Experience" icon="✍️" label="writing"  />
-            <CardContainer minWidth="300px" >
+          <Section.Container id="writing" Background={Background}>
+            <Section.Header name="Writing" icon="✍️" label="writing" />
+            <CardContainer minWidth="300px">
               {posts.map(({ Component, ...rest }) => (
                 <Fade bottom key={rest.id}>
                   <Component {...rest} key={rest.id} />
@@ -203,7 +201,6 @@ const Writing = () => (
               ))}
             </CardContainer>
           </Section.Container>
-          </div>
         )
       );
     }}
