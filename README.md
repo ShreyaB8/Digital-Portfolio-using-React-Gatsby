@@ -9,6 +9,6 @@
       <img src="https://img.shields.io/badge/Status%20-In%20Progress%20User%20-gray.svg?colorA=655BE1&colorB=4F44D6&style=for-the-badge"/>
     </a>
     <br />
-  <p align="center">Made with :heart: ,Gastby and React.js. </p>
+  <p align="center">Made with :heart: , Gastby and React.js. </p>
   </p>
 
