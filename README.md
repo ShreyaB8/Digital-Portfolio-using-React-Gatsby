@@ -1,6 +1,5 @@
 <p align="center">
  <img width="100px" src="https://img.icons8.com/nolan/100/js.png" align="center" alt="Project logo" />
- <img width="100px" src="https://img.icons8.com/nolan/64/source-code.png" align="center" alt="Project2 logo" />
  <h1 align="center">Digital Portfolio</h1>
 </p>
   <p align="center">
